@@ -34,7 +34,8 @@ Things you may want to cover:
 - has_many :groups_users
 - has_many :groups, through: :groups_users
 ### index(users)
-|users|Column|Options|
+|Table|Column|Options|
+|-----|------|-------|
 |users|email|unique: true|
 |users|nickname|unique: true|
 
