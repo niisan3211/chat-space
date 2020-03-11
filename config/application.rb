@@ -8,10 +8,11 @@ Bundler.require(*Rails.groups)
 
 module ChatSpace
   class Application < Rails::Application
-  config.generators do |g|
-    g.stylesheets false
-    g.javascripts false
-    g.helper false #実体はモジュール（多分、ヘルパーメソッドを自分で作る場合に使うのでは）
-    g.test_framework false
+    config.generators do |g|
+      g.stylesheets false
+      g.javascripts false
+      g.helper false
+      g.test_framework false
+    end
   end
 end
