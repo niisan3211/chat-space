@@ -8,13 +8,41 @@
   height: 100vh;
   width: 300px;
   background-color: #253141;
-  &__user_name{
+  &__header{
     height: 100px;
-    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    font-weight: bold;
+    color: #ffffff;
+    &__box{
+      height: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      &__name{
+        line-height: 20px;
+        font-size: 16px;
+      }
+      &__icon{
+        line-height: 20px;
+        display: flex;
+        justify-content: flex-end;
+        li{
+          a{
+            color: #ffffff;
+          }
+        }
+        &__edit{
+          margin-right: 5px;
+        }
+      }
+
+    }
   }
   &__group-list{
     height: calc(100vh - 100px);
-    width: 300px;
     background-color: #2f3e51;
   }
 }

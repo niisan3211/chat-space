@@ -1,6 +1,14 @@
 .side_bar
-  .side_bar__user_name
-    .top_items
-      .top_items__name
-      .top_items__icon
+  .side_bar__header
+    .side_bar__header__box
+      .side_bar__header__box__name
+        name
+      %ul.side_bar__header__box__icon
+        %li.side_bar__header__box__icon__edit
+          = link_to "#" do
+            = icon('fa','edit')
+        %li.side_bar__header__box__icon__cog
+          =link_to "#" do
+            = icon('fa','cog')
   .side_bar__group-list
+    
