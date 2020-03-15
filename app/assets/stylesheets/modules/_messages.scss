@@ -65,6 +65,34 @@
   background-color: #ffffff;
   &__group_info{
     height: 100px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    &__name{
+      padding-top: 35px;
+      &__group{
+        margin-bottom: 15px;
+        font-size: 20px;
+        color: #333333;
+      }
+      &__member{
+        font-size: 15px;
+        color: #999999;
+      }
+    }
+    &__button{
+      margin-top: 28px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      width: 72px;
+      padding: 0 20px;
+      text-decoration: none;
+      color: #38aef0;
+      border: 1px solid #38aef0;
+      }
+    
   }
   &__message_list{
     height: calc(100vh - 190px);
