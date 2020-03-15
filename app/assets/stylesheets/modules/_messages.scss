@@ -46,10 +46,13 @@
     padding: 0 20px;
     &__display{
       padding: 20px 0 40px 0;
+      font-size:0;
       &__name{
         font-size: 15px;
+        margin-bottom: 5px;
       }
       &__message{
+        font-size: 11px;
 
       }
     }
