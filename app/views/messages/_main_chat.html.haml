@@ -1,4 +1,10 @@
 .main_chat
   .main_chat__group_info
+    %ul.main_chat__group_info__name
+      %li.main_chat__group_info__name__group
+        テクチーム
+      %li.main_chat__group_info__name__member
+        hikaru
+    = link_to "Edit", "#", class: "main_chat__group_info__button" 
   .main_chat__message_list
   .main_chat__message_form
