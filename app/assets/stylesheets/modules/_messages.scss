@@ -98,6 +98,28 @@
     height: calc(100vh - 190px);
     background-color: #fafafa;
     border-top: 1px solid #eeeeee;
+    padding: 35px 40px;
+    &__group{
+      &__user{
+        display: flex;
+        margin-bottom: 12px;
+        &__name{
+          font-size: 16px;
+          color: #333333;
+        }
+        &__created_at{
+          font-size: 12px;
+          margin-left: 10px;
+          color: #999999;
+        }
+      }
+      &__message{
+        font-size: 14px;
+        margin-bottom: 46px;
+        color: #434a54;
+      }
+    }
+    
   }
   &__message_form{
     height: 90px;
