@@ -4,7 +4,7 @@
       %li.main_chat__group_info__name__group
         テクチーム
       %li.main_chat__group_info__name__member
-        hikaru
+        tarou
     = link_to "Edit", "#", class: "main_chat__group_info__button" 
   .main_chat__message_list
     .main_chat__message_list__group
@@ -24,3 +24,9 @@
       .main_chat__message_list__group__message
         おはよう!!
   .main_chat__message_form
+    %form(action="#" method="post" class="main_chat__message_form__box")
+      %input(type="text" placeholder="type a message" class="main_chat__message_form__box__input")/
+      %label(class="main_chat__message_form__box__icon")
+        %i.fa.fa-image.fa-lg
+        %input(type="file" class="main_chat__message_form__box__label")
+    %input(type="submit" value="Send" class="main_chat__message_form__button")
