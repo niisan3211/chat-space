@@ -1,0 +1,32 @@
+.main_chat
+  .main_chat__group-info
+    %ul.main_chat__group-info__name
+      %li.main_chat__group-info__name__group
+        テクチーム
+      %li.main_chat__group-info__name__member
+        tarou
+    = link_to "Edit", "#", class: "main_chat__group-info__button" 
+  .main_chat__message-list
+    .main_chat__message-list__group
+      %ul.main_chat__message-list__group__user
+        %li.main_chat__message-list__group__user__name
+          masa
+        %li.main_chat__message-list__group__user__created_at
+          2020/03/16(Mon) 11:07:41
+      .main_chat__message-list__group__message
+        おはよう
+    .main_chat__message-list__group  
+      %ul.main_chat__message-list__group__user
+        %li.main_chat__message-list__group__user__name
+          nana
+        %li.main_chat__message-list__group__user__created_at
+          2020/03/16(Mon) 11:07:42
+      .main_chat__message-list__group__message
+        おはよう!!
+  .main_chat__message-form
+    %form(action="#" method="post" class="main_chat__message-form__box")
+      %input(type="text" placeholder="type a message" class="main_chat__message-form__box__input")/
+      %label(class="main_chat__message-form__box__icon")
+        %i.fa.fa-image.fa-lg
+        %input(type="file" class="main_chat__message-form__box__label")
+    %input(type="submit" value="Send" class="main_chat__message-form__button")

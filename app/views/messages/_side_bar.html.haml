@@ -1,0 +1,25 @@
+.side_bar
+  .side_bar__header
+    .side_bar__header__box
+      %p.side_bar__header__box__name
+        name
+      %ul.side_bar__header__box__icon
+        %li.side_bar__header__box__icon__edit
+          = link_to "#" do
+            = icon('fa','edit')
+        %li.side_bar__header__box__icon__cog
+          =link_to "#" do
+            = icon('fa','cog')
+  .side_bar__group-list
+    =link_to "#" do
+      %ul.side_bar__group-list__display
+        %li.side_bar__group-list__display__name
+          techcamp
+        %li.side_bar__group-list__display__message
+          not_message
+    =link_to "#" do
+      %ul.side_bar__group-list__display
+        %li.side_bar__group-list__display__name
+          group
+        %li.side_bar__group-list__display__message
+          not_message
