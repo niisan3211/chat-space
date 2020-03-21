@@ -5,7 +5,7 @@
         = current_user.nickname
       %ul.side_bar__header__box__icon
         %li.side_bar__header__box__icon__edit
-          = link_to "#" do
+          = link_to new_group_path do
             = icon('fa','edit')
         %li.side_bar__header__box__icon__cog
           =link_to edit_user_path(current_user) do
