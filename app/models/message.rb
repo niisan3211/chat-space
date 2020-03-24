@@ -6,4 +6,6 @@ class Message < ApplicationRecord
     validates :body, presence: true
     validates :image, presence: true
   end
+
+  mount_uploader :image, ImageUploader
 end
