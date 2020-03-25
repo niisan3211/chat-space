@@ -12,10 +12,10 @@
             = icon('fa','cog')
   .side_bar__group-list
     - current_user.groups.each do |group|  
-      =link_to "#" do
+      =link_to group_messages_path(group) do
         %ul.side_bar__group-list__display
           %li.side_bar__group-list__display__name
             = group.name
           %li.side_bar__group-list__display__message
-            not_message
+            = group.show_last_message
    
