@@ -8,6 +8,11 @@
 .wrapper{
   display: flex;
 }
+.field_with_errors {
+  display: contents;
+  // もしくは diplay: inline;
+  // エラーでのレイアウト崩れを阻止
+}
 .side_bar{
   height: 100vh;
   width: 300px;
@@ -97,6 +102,7 @@
     background-color: #fafafa;
     border-top: 1px solid #eeeeee;
     padding: 35px 40px;
+    overflow: scroll;
     &__group{
       &__user{
         display: flex;
@@ -126,23 +132,29 @@
     align-items: center;
     padding: 0 40px;
     background-color: #d2d2d2;
-    &__box{
-      width: 100%;
+    &__form{
       display: flex;
-      position: relative;
-      &__input{
-        height: 50px;
+      width: 100%;
+      &__box{
         width: 100%;
-        padding: 0 40px 0 10px;
-      }
-      &__icon{
-        position: absolute;
-        bottom: 10px;
-        right: 10px;
-        cursor: pointer;
-      }
-      &__label{
-        display: none;
+        display: flex;
+        position: relative;
+        &__input{
+          height: 50px;
+          width: 100%;
+          padding: 0 40px 0 10px;
+        }
+        &__boxes{
+          &__icon{
+            position: absolute;
+            bottom: 5px;
+            right: 10px;
+            cursor: pointer;
+          }
+          &__label{
+            display: none;
+          }
+        }
       }
     }
     &__button{
