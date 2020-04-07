@@ -58,9 +58,9 @@ $('#new_message').on('submit',function(e){
         $('form')[0].reset();
         $('.main_chat__message-form__button').prop('disabled', false);
       })
-      .fail(function){
+      .fail(function(){
         alert("メッセージ送信に失敗しました");
-      }
+      });
 })
 });
 
